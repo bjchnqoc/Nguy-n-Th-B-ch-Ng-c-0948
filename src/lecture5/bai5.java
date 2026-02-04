@@ -15,15 +15,15 @@ public class bai5 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("nhap n 1-10: ");
-        int n = scanner.nextInt();
+        int n;
         Random rand = new Random();
         int randomnumber;
         int sodem = 0;
         do {
             randomnumber = rand.nextInt(10) + 1;
             sodem++;
-            System.out.println("lan " + sodem + " : " + randomnumber);
+            System.out.print("nhap n 1-10: ");
+            n = scanner.nextInt();
         } while (randomnumber != n);
         System.out.println(" so lan do " + sodem);
     }

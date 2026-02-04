@@ -1,13 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package lecture5;
-
-/**
- *
- * @author computer
- */
 import java.util.*;
 import java.util.Scanner;
 
@@ -29,3 +20,4 @@ public class bai4 {
         }
     }
 }
+//nhap vao 1 so 1-100 kiem tra so do co lon hon/be hon/bang so thuc tu1.0-100.0

@@ -24,6 +24,5 @@ public class bai6 {
 //6. Thay thế một từ trong chuỗi
 //Nhập vào một chuỗi, một từ cần thay thế và từ thay thế, sau đó in ra chuỗi mới.
 //Ví dụ:
-//Input: "I love Java", thay "Java" bằng "Python"
-//Output: "I love Python"
+
 

@@ -15,20 +15,19 @@ public class bai6 {
             System.out.print("nhap lai: ");
             n = scanner.nextInt();
         }
-        if (n >= 1 && n <= 100) {
-            while (n != randomnumber) {
-                if (n < randomnumber) {
-                    System.out.println("lon hon");
-                    n = scanner.nextInt();
-                } else if (n > randomnumber) {
-                    System.out.println("be hon");
-                    n = scanner.nextInt();
-                }
+        while (n != randomnumber) {
+            if (n < randomnumber) {
+                System.out.println("lon hon");
+                n = scanner.nextInt();
+            } else if (n > randomnumber) {
+                System.out.println("be hon");
+                n = scanner.nextInt();
             }
-            if (n == randomnumber) {
-                System.out.print("chuc mung");
-            }
+        }
+        if (n == randomnumber) {
+            System.out.print("chuc mung");
         }
     }
 }
+
 //sinh mot so ngau nhien tu 1-100. Nguoi choi nhap so doan. Neu doan dung in ra"chuc mung". Neu sai goi y"lon hon" hoac"be hon".Lap lai cho den khi doan dung
