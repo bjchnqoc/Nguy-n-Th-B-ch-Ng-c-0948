@@ -1,4 +1,4 @@
-package lecture5;
+package Lec5_Loops;
 import java.util.*;
 public class bai1 {
     public static void main(String[] args){
