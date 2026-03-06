@@ -12,7 +12,7 @@ public class PersonList {
         System.out.print("added");
     }
 
-   public void updatePersonById(String id) {
+    public void updatePersonById(String id) {
         for (Person person : personList) {
             if (person.getId().equals(id)) {
                 person.updatePerson();
@@ -52,30 +52,33 @@ public class PersonList {
             }
         }
     }
-}
 
-//    public void updatePersonId(String id) {
-//        for (Person person : personList) {
-//            if (person.id.equals(id)) {
-//                return;
-//            }
-//        }
-//        System.out.println("not found id:" + id);
-//        return;
-//
-//    }
-//
-//    public void deletePersonById(String id) {
-//        Person person
-//
-//    }
-//
-//    public void findPersonById(String id) {
-//
-//    }
-//
-//    public void displayAll() {
-//
-//    }
-//
-//}
+    public Student findStudentWithMaxGPA() {
+        Student maxStudent = null;
+        for (Person p : personList) {
+            if (p instanceof Student) {
+                Student s = (Student) p; // Ép kiểu về Student
+                if (maxStudent == null || s.getGpa() > maxStudent.getGpa()) {
+                    maxStudent = s;
+                }
+            }
+        }
+        return maxStudent;
+    }
+
+    public Teacher findTeacherWithMaxSalary() {
+        Teacher maxTeacher = null;
+        for (Person p : personList) {
+            if (p instanceof Teacher) {
+                Teacher t = (Teacher) p; // Ép kiểu về Teacher
+                // Giả sử Teacher có hàm calculateSalary()
+                if (maxTeacher == null || t.getBaseSalary() > maxTeacher.getBaseSalary()) {
+                    maxTeacher = t;
+                }
+            }
+
+        }
+        return maxTeacher;
+    }
+
+}

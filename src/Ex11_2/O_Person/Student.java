@@ -39,8 +39,10 @@ public class Student extends Person {
 
     @Override
     public void addPerson() {
+        super.addPerson();
         System.out.print("gpa: ");
         setGpa(scanner.nextDouble());
+        scanner.nextLine();
         System.out.print("tuitionFee: ");
         setTuitionFee(scanner.nextDouble());
     }

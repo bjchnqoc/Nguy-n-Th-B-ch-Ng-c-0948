@@ -53,7 +53,25 @@ public class Processor {
                     System.out.println("All persons: ");
                     list.displayAllPersons();
                     break;
+                case 7:
+                    Student topS = list.findStudentWithMaxGPA();
+                    if (topS != null) {
+                        System.out.println(" student with max gpa: ");
+                        topS.displayDetails();
+                    } else {
+                        System.out.println("don't have any student in list.");
+                    }
+                    break;
 
+                case 8:
+                    Teacher topT = list.findTeacherWithMaxSalary();
+                    if (topT != null) {
+                        System.out.println("teacher with max salary: ");
+                        topT.displayDetails();
+                    } else {
+                        System.out.println("don't have any teacher in list.");
+                    }
+                    break;
             }
 
         }

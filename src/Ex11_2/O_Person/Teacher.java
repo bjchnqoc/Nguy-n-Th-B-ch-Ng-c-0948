@@ -39,8 +39,10 @@ public class Teacher extends Person {
 
     @Override
     public void addPerson() {
+        super.addPerson();
         System.out.print("number of classes: ");
         setNumberOfClasses(scanner.nextInt());
+        scanner.nextLine();
         System.out.print("base salary: ");
         setBaseSalary(scanner.nextDouble());
 

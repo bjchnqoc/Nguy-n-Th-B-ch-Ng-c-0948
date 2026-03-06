@@ -60,6 +60,7 @@ public abstract class Person implements IPerson {
         setName(scanner.nextLine());
         System.out.print("year of birth: ");
         setYearOfBirth(scanner.nextInt());
+        scanner.nextLine();
     }
 
     @Override
