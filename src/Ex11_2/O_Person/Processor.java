@@ -24,36 +24,36 @@ public class Processor {
                     System.out.println(" Exit Program");
                     sc.close();
                     return;
-                case 1:
+                case 1: //them hoc sinh
                     Student student = new Student();
                     list.addPerson(student);
                     break;
-                case 2:
+                case 2:// them giao vien
                     Teacher teacher = new Teacher();
                     list.addPerson(teacher);
                     break;
-                case 3:
+                case 3://cap nhat bang id
                     System.out.print(" enter id to update person: ");
                     String updateId = sc.nextLine();
                     list.updatePersonById(sc.nextLine());
-                case 4:
+                case 4:// xoa bang id
                     sc.nextLine();
                     System.out.print("Enter id to delete person by id: ");
                     list.deletePersonById(sc.nextLine());
                     System.out.println("Success");
                     break;
-                case 5:
+                case 5://tim nguoi bang id
                     sc.nextLine();
                     System.out.print("Enter id to find person by id: ");
                     list.findPersonById(sc.nextLine());
                     System.out.println("Success");
                     break;
 
-                case 6:
+                case 6: //chi tiet moi nguoi
                     System.out.println("All persons: ");
                     list.displayAllPersons();
                     break;
-                case 7:
+                case 7: //tim sinh vien co gpa cao nhat
                     Student topS = list.findStudentWithMaxGPA();
                     if (topS != null) {
                         System.out.println(" student with max gpa: ");
@@ -63,7 +63,7 @@ public class Processor {
                     }
                     break;
 
-                case 8:
+                case 8://tim giao vien co luong cao nhat
                     Teacher topT = list.findTeacherWithMaxSalary();
                     if (topT != null) {
                         System.out.println("teacher with max salary: ");
